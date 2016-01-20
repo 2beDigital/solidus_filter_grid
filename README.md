@@ -5,12 +5,12 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'spree_filter_grid'
+gem 'spree_filter_grid', :git => 'https://github.com/NoelDiazMesa/spree_filter_grid', :branch => 'master'
 ```
 
 And then execute:
 
-    $ bundle
+    $ bundle exec rails g spree_filter_grid:install
 
 Or install it yourself as:
 
