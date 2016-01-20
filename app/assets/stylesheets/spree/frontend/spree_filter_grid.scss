@@ -5,10 +5,10 @@ $icon-grid: image_path("th-grid.png");
 $icon-grid-vertical: image_path("th-grid-vertical.png");
 
 /********** ICONS **************/
-.i-th-extra-large        { @include inline-block;vertical-align: middle; width: 15px; height: 15px; background: url($icon-grid-extra) no-repeat; background-size: 15px 30px; background-position: 0px -15px; &:hover, &:focus{ background-position: 0px 0px; }}
-.i-th-large              { @include inline-block;vertical-align: middle; width: 15px; height: 15px; background: url($icon-grid-large) no-repeat; background-size: 15px 30px; background-position: 0px -15px; &:hover, &:focus{ background-position: 0px 0px; }}
-.i-th                    { @include inline-block;vertical-align: middle; width: 15px; height: 15px; background: url($icon-grid) no-repeat; background-size: 15px 30px; background-position: 0px -15px; &:hover, &:focus{ background-position: 0px 0px; }}
-.i-th-vertical           { @include inline-block;vertical-align: middle; width: 15px; height: 15px; background: url($icon-grid-vertical) no-repeat; background-size: 15px 30px; background-position: 0px -15px; &:hover, &:focus{ background-position: 0px 0px; }}
+.i-th-extra-large        { display: inline-block; vertical-align: middle; width: 15px; height: 15px; background: url($icon-grid-extra) no-repeat; background-size: 15px 30px; background-position: 0px -15px; &:hover, &:focus{ background-position: 0px 0px; }}
+.i-th-large              { display: inline-block; vertical-align: middle; width: 15px; height: 15px; background: url($icon-grid-large) no-repeat; background-size: 15px 30px; background-position: 0px -15px; &:hover, &:focus{ background-position: 0px 0px; }}
+.i-th                    { display: inline-block; vertical-align: middle; width: 15px; height: 15px; background: url($icon-grid) no-repeat; background-size: 15px 30px; background-position: 0px -15px; &:hover, &:focus{ background-position: 0px 0px; }}
+.i-th-vertical           { display: inline-block; vertical-align: middle; width: 15px; height: 15px; background: url($icon-grid-vertical) no-repeat; background-size: 15px 30px; background-position: 0px -15px; &:hover, &:focus{ background-position: 0px 0px; }}
 
 /********** STYLES *************/
 
@@ -51,7 +51,7 @@ $icon-grid-vertical: image_path("th-grid-vertical.png");
 	}	
 }
 
-@include bp(xs){
+@media screen and (max-width: 460px){
 	#product_grid_sort{
 		min-width: 50px;
 		margin: 0px;
