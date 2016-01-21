@@ -21,10 +21,10 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th-extra-large').addClass('active');
 		$('ul.product-list li').each( function() {
-				$(this).removeClass('col-md-4 col-sm-4 col-xs-6 col-md-6 col-sm-6').addClass('col-md-3 col-sm-3');
+			$(this).css('width','23.0769%');
 		});
 		$('ul.product-listing  li').each( function() {
-			$(this).removeClass('span6 span4').addClass('span3');
+			$(this).css('width','23.0769%');
 		});
 	});
 
@@ -32,10 +32,11 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th-large').addClass('active');
 		$('ul.product-list li').each( function() {
-				$(this).removeClass('col-md-3 col-sm-3 col-xs-6 col-md-6 col-sm-6').addClass('col-md-4 col-sm-4');
+			$(this).css('width','31.6239%');
 		});
+
 		$('ul.product-listing  li').each( function() {
-			$(this).removeClass('span3 span6').addClass('span4');
+			$(this).css('width','31.6239%');
 		});
 	});
 
@@ -43,10 +44,10 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th').addClass('active');
 		$('ul.product-list  li').each( function() {
-			$(this).removeClass('col-xs-12 col-md-3 col-sm-3 col-md-4 col-sm-4').addClass('col-xs-6 col-md-6 col-sm-6');
+			$(this).css('width','48.7179%');
 		});
 		$('ul.product-listing  li').each( function() {
-			$(this).removeClass('span3 span4').addClass('span6');
+			$(this).css('width','48.7179%');
 		});
 	});
 
@@ -54,10 +55,10 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th-vertical').addClass('active');
 		$('ul.product-list  li').each( function() {
-			$(this).removeClass('col-md-3 col-sm-3 col-md-4 col-sm-4 col-xs-6').addClass('col-xs-12');
+			$(this).css('width','100%');
 		});
 		$('ul.product-listing  li').each( function() {
-			$(this).removeClass('span3 span4').addClass('span6');
+			$(this).css('width','100%');
 		});
 	});
 });
