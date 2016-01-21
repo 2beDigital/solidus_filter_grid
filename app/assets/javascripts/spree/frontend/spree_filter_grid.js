@@ -21,10 +21,10 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th-extra-large').addClass('active');
 		$('ul.product-list li').each( function() {
-			$(this).css('width','23.0769%');
+			$(this).css({'width':'23.0769%', 'clear': 'none'});
 		});
 		$('ul.product-listing  li').each( function() {
-			$(this).css('width','23.0769%');
+			$(this).css({'width':'23.0769%', 'clear': 'none'});
 		});
 	});
 
@@ -32,11 +32,11 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th-large').addClass('active');
 		$('ul.product-list li').each( function() {
-			$(this).css('width','31.6239%');
+			$(this).css({'width':'31.6239%', 'clear': 'none'});
 		});
 
 		$('ul.product-listing  li').each( function() {
-			$(this).css('width','31.6239%');
+			$(this).css({'width':'31.6239%', 'clear': 'none'});
 		});
 	});
 
@@ -44,10 +44,10 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th').addClass('active');
 		$('ul.product-list  li').each( function() {
-			$(this).css('width','48.7179%');
+			$(this).css({'width':'48.7179%', 'clear': 'none'});
 		});
 		$('ul.product-listing  li').each( function() {
-			$(this).css('width','48.7179%');
+			$(this).css({'width':'48.7179%', 'clear': 'none'});
 		});
 	});
 
@@ -55,10 +55,10 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th-vertical').addClass('active');
 		$('ul.product-list  li').each( function() {
-			$(this).css('width','100%');
+			$(this).css({'width':'100%', 'clear': 'none'});
 		});
 		$('ul.product-listing  li').each( function() {
-			$(this).css('width','100%');
+			$(this).css({'width':'100%', 'clear': 'none'});
 		});
 	});
 });
