@@ -21,22 +21,22 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th-extra-large').addClass('active');
 		$('ul.product-list li').each( function() {
-			$(this).css({'width':'23.0769%', 'clear': 'unset'});
+			$(this).css('width','23.0769%').removeProp('clear');
 		});
 		$('ul.product-listing  li').each( function() {
-			$(this).css({'width':'23.0769%', 'clear': 'unset'});
+			$(this).css('width','23.0769%').removeProp('clear');
 		});
 	});
 
 	$('a#grid-th-large').on('click', function(){
 		removeActive();
-		$('.i-th-large').addClass('active');
+		$('.i-th-large').addClass('active').removeProp('clear');
 		$('ul.product-list li').each( function() {
-			$(this).css({'width':'31.6239%', 'clear': 'unset'});
+			$(this).css('width','31.6239%').removeProp('clear');
 		});
 
 		$('ul.product-listing  li').each( function() {
-			$(this).css({'width':'31.6239%', 'clear': 'unset'});
+			$(this).css('width','31.6239%').removeProp('clear');
 		});
 	});
 
@@ -44,10 +44,10 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th').addClass('active');
 		$('ul.product-list  li').each( function() {
-			$(this).css({'width':'48.7179%', 'clear': 'unset'});
+			$(this).css('width','48.7179%').removeProp('clear');
 		});
 		$('ul.product-listing  li').each( function() {
-			$(this).css({'width':'48.7179%', 'clear': 'unset'});
+			$(this).css('width','48.7179%').removeProp('clear');
 		});
 	});
 
@@ -55,10 +55,10 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th-vertical').addClass('active');
 		$('ul.product-list  li').each( function() {
-			$(this).css({'width':'100%', 'clear': 'unset'});
+			$(this).css('width','100%').removeProp('clear');
 		});
 		$('ul.product-listing  li').each( function() {
-			$(this).css({'width':'100%', 'clear': 'unset'});
+			$(this).css('width','100%').removeProp('clear');
 		});
 	});
 });

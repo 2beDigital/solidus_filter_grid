@@ -51,11 +51,26 @@ $icon-grid-vertical: image_path("th-grid-vertical.png");
 	}	
 }
 
+.hidden-mobile{
+	visibility: visible;
+}
+.hidden-desktop{
+	visibility: hidden;
+}
+
+@media screen and (max-width: 768px){
+	.hidden-mobile{
+		visibility: hidden;
+	}
+	.hidden-desktop{
+		visibility: visible;
+	}
+}
+
 @media screen and (max-width: 460px){
 	#product_grid_sort{
 		min-width: 50px;
 		margin: 0px;
-
 		ul{
 			padding: 6px 0px 6px 6px;
 			float: right;
