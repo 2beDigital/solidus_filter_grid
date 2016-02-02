@@ -53,17 +53,21 @@ $icon-grid-vertical: image_path("th-grid-vertical.png");
 
 .hidden-mobile{
 	visibility: visible;
+	display:inline-block;
 }
 .hidden-desktop{
 	visibility: hidden;
+	display:none;
 }
 
 @media screen and (max-width: 768px){
 	.hidden-mobile{
 		visibility: hidden;
+		display:none !important;
 	}
 	.hidden-desktop{
 		visibility: visible;
+		display:inline-block;
 	}
 }
 
