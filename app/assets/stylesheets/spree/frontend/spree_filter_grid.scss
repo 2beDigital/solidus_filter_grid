@@ -97,19 +97,19 @@ xfilter
   background: #ffffff;
   box-shadow: 4px 4px 20px transparent;
   z-index: 105;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   transition: right 0.4s;
 }
 
 #form-filters{
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  flex: 1 1 0%;
+  overflow: auto;
 }
 
 .cd-filter form {
     background-color: #fff;
-    flex: 1 1 0%;
-    overflow: auto;
     padding: 10px 10%;
 }
 .cd-filter ul{
@@ -149,7 +149,7 @@ xfilter
   padding: 0;
   width: 100%;
   text-align: center;
-  position: absolute;
+  position: relative;
   button{
     width: 200px;
     margin-top: 10px;
@@ -160,14 +160,7 @@ xfilter
   top: 0px;
   height: 50px;
 }
-@media only screen and (min-width: 1170px) {
-  .cd-filter {
-    width: 100%;
-  }
-  .cd-filter form {
-    padding: 70px 10%;
-  }
-}
+
 
 .cd-filter-trigger {
   position: relative;

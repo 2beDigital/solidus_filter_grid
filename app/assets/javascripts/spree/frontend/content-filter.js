@@ -2,9 +2,11 @@ jQuery(document).ready(function($){
 	//open/close lateral filter
 	$('.cd-filter-trigger').on('click', function(){
 		triggerFilter(true);
+		$('#cd-shadow-layer').addClass('is-visible');
 	});
 	$('.cd-filter .cd-close').on('click', function(){
 		triggerFilter(false);
+		$('#cd-shadow-layer').removeClass('is-visible');
 	});
 
 	$('ul.cd-filter-content.cd-filters.list').each( function(){
