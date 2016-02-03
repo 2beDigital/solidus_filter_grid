@@ -114,6 +114,7 @@ xfilter
 }
 .cd-filter ul{
   list-style: none;
+  padding-left: 20px;
 }
 .cd-filter .cd-close {
   position: absolute;
@@ -225,7 +226,7 @@ xcustom form elements
   position: relative;
   margin-bottom: .2em;
   padding: 10px 0 10px 20px;
-  color: #9a9a9a;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.3rem;
@@ -387,7 +388,7 @@ xcustom form elements
   /* check mark style for check boxes */
   width: 16px;
   height: 16px;
-  background: url("cd-icon-check.svg") no-repeat center center;
+  /*background: url("cd-icon-check.svg") no-repeat center center;*/
 }
 .cd-filter-block .radio-label::before,
 .cd-filter-block .radio-label::after {
@@ -431,6 +432,8 @@ xcustom form elements
 .slider.slider-horizontal {
   width: 150px;
   height: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .slider.slider-horizontal .slider-track {
   height: 10px;
@@ -504,13 +507,6 @@ xcustom form elements
   width: 20px;
   height: 20px;
   background-color: #9a9a9a;
-  background-image: -moz-linear-gradient(top, #149bdf, #0480be);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149bdf), to(#0480be));
-  background-image: -webkit-linear-gradient(top, #149bdf, #0480be);
-  background-image: -o-linear-gradient(top, #149bdf, #0480be);
-  background-image: linear-gradient(to bottom, #149bdf, #0480be);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149bdf', endColorstr='#ff0480be', GradientType=0);
   -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
