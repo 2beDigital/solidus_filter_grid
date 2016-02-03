@@ -101,8 +101,6 @@ xfilter
 }
 
 #form-filters{
-  height: 85%;
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -147,12 +145,14 @@ xfilter
 #form-filter-footer{
   bottom: 0;
   box-shadow: 0px -3px 5px 0px #979798;
-  min-height: 100px;
+  height: 50px;
   padding: 0;
   width: 100%;
   text-align: center;
+  position: absolute;
   button{
     width: 200px;
+    margin-top: 10px;
   }
 }
 
