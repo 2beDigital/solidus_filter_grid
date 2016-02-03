@@ -120,12 +120,12 @@ xfilter
   top: 0;
   left: 0;
   height: 50px;
-  line-height: 50px;
+  line-height: 55px;
   width: 60px;
   color: #ffffff;
   font-size: 1.3rem;
   text-align: center;
-  background: #08298A;
+  background: $brand-primary;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
@@ -160,6 +160,7 @@ xfilter
   top: 0px;
   height: 50px;
   text-align: center;
+  background: $brand-primary;
   h4{
     color: rgb(154, 154, 154);
     text-transform: uppercase;
