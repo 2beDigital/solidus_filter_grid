@@ -89,49 +89,38 @@ xfilter
 
 -------------------------------- */
 .cd-filter {
-  position: relative;
-  top: -50px;
-  left: 0;
-  width: 100%;
+  position: fixed;
+  top:0px;
+  right: -400px;
+  width: 300px;
   height: 100%;
   background: #ffffff;
   box-shadow: 4px 4px 20px transparent;
-  z-index: 2;
-  /* Force Hardware Acceleration in WebKit */
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateX(-150%);
-  -moz-transform: translateX(-150%);
-  -ms-transform: translateX(-150%);
-  -o-transform: translateX(-150%);
-  transform: translateX(-150%);
-  -webkit-transition: -webkit-transform 0.3s, box-shadow 0.3s;
-  -moz-transition: -moz-transform 0.3s, box-shadow 0.3s;
-  transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 105;
+  transition: right 0.4s;
 }
-.cd-filter::before {
-  /* top colored bar */
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 50px;
-  width: 100%;
-  background-color: #045FB4;
-  z-index: 2;
+
+#form-filters{
+  height: 85%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
+
 .cd-filter form {
-  padding: 70px 20px;
+    background-color: #fff;
+    flex: 1 1 0%;
+    overflow: auto;
+    padding: 10px 10%;
+}
+.cd-filter ul{
+  list-style: none;
 }
 .cd-filter .cd-close {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   height: 50px;
   line-height: 50px;
   width: 60px;
@@ -149,15 +138,27 @@ xfilter
   background: #084B8A;
 }
 .cd-filter.filter-is-visible {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  right: 0px;
 }
 .cd-filter.filter-is-visible .cd-close {
   opacity: 1;
+}
+
+#form-filter-footer{
+  bottom: 0;
+  box-shadow: 0px -3px 5px 0px #979798;
+  min-height: 100px;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  button{
+    width: 200px;
+  }
+}
+
+#form-filter-header{
+  top: 0px;
+  height: 50px;
 }
 @media only screen and (min-width: 1170px) {
   .cd-filter {
@@ -327,6 +328,7 @@ xcustom form elements
 .cd-filter-block select::-ms-expand {
   display: none;
 }
+
 .cd-filter-block .list li {
   position: relative;
   margin-bottom: .8em;
