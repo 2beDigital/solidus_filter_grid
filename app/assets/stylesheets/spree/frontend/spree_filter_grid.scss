@@ -190,23 +190,32 @@ xfilter
   float: right;
   height: 50px;
   line-height: 50px;
-  width: 60px;
   /* image replacement */
   overflow: hidden;
   white-space: nowrap;
   z-index: 3;
   padding: 0px 5px;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
+
+a.cd-filter-trigger:hover,
+a.cd-filter-trigger:focus{
+    text-decoration:none;
+}
+
 .cd-filter-trigger.filter-is-visible {
   pointer-events: none;
 }
-@media only screen and (min-width: 1170px) {
-  .cd-filter-trigger {
-    width: auto;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 700;
+@media only screen and (max-width: 420px) {
+  .cd-filter-trigger span{
+    display: none;
   }
+}
+@media only screen and (min-width: 1170px) {
+
   .no-touch .cd-filter-trigger:hover {
     color: #045FB4;
   }
