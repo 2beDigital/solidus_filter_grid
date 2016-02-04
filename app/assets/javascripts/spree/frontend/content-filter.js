@@ -1,10 +1,36 @@
 jQuery(document).ready(function($){
 	//open/close lateral filter
-	$('.cd-filter-trigger').on('click', function(){
+	$('#trigger-filters').on('click', function(){
+		if ($('#filters').hasClass('hidden')){
+			$('#filters').removeClass('hidden');
+			$('#sidebar_products_search').removeClass('hidden');
+			$('#form-filter-footer').removeClass('hidden');
+		}
+		$('#orders').addClass('hidden');
+		$('#order-list').addClass('hidden');
 		triggerFilter(true);
 		$('#cd-shadow-layer').addClass('is-visible');
+
 	});
+
+	$('#trigger-orders').on('click',function (){
+		if ($('#orders').hasClass('hidden')){
+			$('#orders').removeClass('hidden');
+			$('#order-list').removeClass('hidden');
+		}	
+		$('#filters').addClass('hidden');
+		$('#sidebar_products_search').addClass('hidden');
+		$('#form-filter-footer').addClass('hidden');
+		triggerFilter(true);
+		$('#cd-shadow-layer').addClass('is-visible');		
+	});
+
 	$('.cd-filter .cd-close').on('click', function(){
+		triggerFilter(false);
+		$('#cd-shadow-layer').removeClass('is-visible');
+	});
+
+	$('#cd-shadow-layer').on('click', function(){
 		triggerFilter(false);
 		$('#cd-shadow-layer').removeClass('is-visible');
 	});
