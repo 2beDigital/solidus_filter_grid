@@ -3,7 +3,7 @@
       <div class="pull-right">
         <a href="#" class="cd-filter-trigger" id='trigger-filters' >
           <i class="fa fa-sliders fa-lg"></i>
-          <span>Filters</span>
+          <span><%= t(:filters) %></span>
         </a> 
       </div>
 
@@ -32,12 +32,12 @@
   <div class="cd-filter">
     <div id="form-filter-header">
       <a href="#" class="cd-close"><i class="fa fa-times fa-2x"></i></a>
-      <h4 id='filters' >Filters</h4>
-      <h4 id='orders'>Orders</h4> 
+      <h4 id='filters' ><%= t(:filters) %></h4>
+      <h4 id='orders'><%= t(:order_scope_word) %> </h4> 
     </div>
     <div id="form-filters">
       <div class="cd-filter-block" id='order-list'>
-        <h4 class="closed">Seleccionar</h4>
+        <h4 class="closed"><%= t(:options) %></h4>
         <ul class="cd-filter-content cd-filters list">
           <li><a class='filter' tabindex="-1" href="<%= redirection_page_order_scope %>?order=descend_by_popularity"><%= t(:order_scope_relevance)%></a></li>
           <li><a class='filter' tabindex="-1" href="<%= redirection_page_order_scope %>?order=descend_by_master_price"><%= t(:order_scope_descend_by_master_price)%></a></li>

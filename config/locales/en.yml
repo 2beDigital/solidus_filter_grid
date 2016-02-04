@@ -1,0 +1,11 @@
+en:
+  ## scopes order ##
+  order_scope_word: Order
+  order_scope_relevance: Relevance
+  order_scope_descend_by_master_price: Price - High to Low
+  order_scope_ascend_by_master_price: Price - Low to High
+  order_scope_ascend_by_name: Name (A - Z)
+  order_scope_descend_by_name: Name (Z - A)
+  order_scope_descend_by_updated_at: Newest
+  filters: Filters
+  options: Options

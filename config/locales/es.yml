@@ -1,0 +1,11 @@
+es:
+  ## scopes order ##
+  order_scope_word: Orden
+  order_scope_relevance: Popularidad
+  order_scope_descend_by_master_price: Precio - Mayor a Menor
+  order_scope_ascend_by_master_price: Precio - Menor a Mayor
+  order_scope_ascend_by_name: Nombre (A - Z)
+  order_scope_descend_by_name: Nombre (Z - A)
+  order_scope_descend_by_updated_at: Novedad
+  filters: Filtros
+  options: Opciones
