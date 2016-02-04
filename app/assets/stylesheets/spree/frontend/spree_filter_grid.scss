@@ -12,6 +12,10 @@ $icon-grid-vertical: image_path("th-grid-vertical.png");
 
 /********** STYLES *************/
 
+.sort-filter-order{
+  margin-left: 7%;
+}
+
 /***  Sort grid ***/
 
 #sort_items_menu{
@@ -33,7 +37,7 @@ $icon-grid-vertical: image_path("th-grid-vertical.png");
 }
 
 #product_grid_sort{
-	margin: 0px 10px 0px 10px;
+	margin: 2px 0px 0px 10px;
 	ul{
 		list-style-type: none;
 		display: inline-block;
@@ -53,11 +57,11 @@ $icon-grid-vertical: image_path("th-grid-vertical.png");
 
 .hidden-mobile{
 	visibility: visible;
-	display:inline-block;
+	display:inline-block !important;
 }
 .hidden-desktop{
 	visibility: hidden;
-	display:none;
+	display:none !important;
 }
 
 @media screen and (max-width: 768px){
@@ -67,7 +71,7 @@ $icon-grid-vertical: image_path("th-grid-vertical.png");
 	}
 	.hidden-desktop{
 		visibility: visible;
-		display:inline-block;
+		display:inline-block !important;
 	}
 }
 

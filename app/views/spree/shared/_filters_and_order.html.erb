@@ -1,6 +1,5 @@
-
 <% if (current_page?("/products") && !params[:keywords]) || (!@taxon.nil? && current_page?('/t/'+@taxon.permalink)) %>
-    <div class=" <%= current_page?('/products') ? 'col-md-12 col-sm-12 col-xs-12' : 'col-md-3 col-sm-3 col-xs-12' %> " >
+    <div class="sort-filter-order" >
       <div class="pull-right">
         <a href="#" class="cd-filter-trigger" id='trigger-filters' >
           <i class="fa fa-sliders fa-lg"></i>
