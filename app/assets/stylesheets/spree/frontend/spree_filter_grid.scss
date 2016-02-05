@@ -12,10 +12,6 @@ $icon-grid-vertical: image_path("th-grid-vertical.png");
 
 /********** STYLES *************/
 
-.sort-filter-order{
-  margin-right: 7%;
-}
-
 /***  Sort grid ***/
 
 #sort_items_menu{
@@ -78,7 +74,7 @@ $icon-grid-vertical: image_path("th-grid-vertical.png");
 @media screen and (max-width: 460px){
 	#product_grid_sort{
 		min-width: 50px;
-		margin: 0px;
+    margin: 2px 5px 0px 10px;
 		ul{
 			padding: 6px 0px 6px 6px;
 			float: right;
