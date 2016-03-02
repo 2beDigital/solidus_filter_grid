@@ -1,29 +1,11 @@
 jQuery(document).ready(function($){
 	//open/close lateral filter
 	$('#trigger-filters').on('click', function(){
-		if ($('#filters').hasClass('hidden')){
-			$('#filters').removeClass('hidden');
-			$('#sidebar_products_search').removeClass('hidden');
-			$('#form-filter-footer').removeClass('hidden');
-		}
-		$('#orders').addClass('hidden');
-		$('#order-list').addClass('hidden');
 		triggerFilter(true);
 		$('#cd-shadow-layer').addClass('is-visible');
 
 	});
 
-	$('#trigger-orders').on('click',function (){
-		if ($('#orders').hasClass('hidden')){
-			$('#orders').removeClass('hidden');
-			$('#order-list').removeClass('hidden');
-		}	
-		$('#filters').addClass('hidden');
-		$('#sidebar_products_search').addClass('hidden');
-		$('#form-filter-footer').addClass('hidden');
-		triggerFilter(true);
-		$('#cd-shadow-layer').addClass('is-visible');		
-	});
 
 	$('.cd-filter .cd-close').on('click', function(){
 		triggerFilter(false);
@@ -35,9 +17,9 @@ jQuery(document).ready(function($){
 		$('#cd-shadow-layer').removeClass('is-visible');
 	});
 
-	$('ul.cd-filter-content.cd-filters.list').each( function(){
+	/*$('ul.cd-filter-content.cd-filters.list').each( function(){
 		$(this).slideToggle(10);
-	});
+	});*/
 
 	function triggerFilter($bool) {
 		var elementsToTrigger = $([$('.cd-filter-trigger'), $('.cd-filter'), $('.cd-tab-filter'), $('.cd-gallery')]);
