@@ -48,15 +48,17 @@
             <h4> <%= filter[:name] %> </h4>
             <ul class="cd-filter-content cd-filters list">
               <% if filter[:name] == 'Price Between' %>
-                <span><%= filter[:min] %>&nbsp;</span>
-                <%= text_field_tag :price_between, nil, name: 'search[' + filter[:scope].to_s + '][]', 
-                    :data => {'slider-id'    => 'ex2Slider',
-                              'slider-min'   => filter[:min],
-                              'slider-max'   => filter[:max],
-                              'slider-step'  => filter[:step],
-                              'slider-value' => [filter[:min],filter[:max]]},
-                    :value => '' + filter[:min].to_s + ',' + filter[:max].to_s %>
-                <span>&nbsp;<%= filter[:max] %></span>
+                <li>
+                    <%= filter[:min] %>&nbsp;
+                    <%= text_field_tag :price_between, nil, name: 'search[' + filter[:scope].to_s + '][]', 
+                        :data => {'slider-id'    => 'ex2Slider',
+                                  'slider-min'   => filter[:min],
+                                  'slider-max'   => filter[:max],
+                                  'slider-step'  => filter[:step],
+                                  'slider-value' => [filter[:min],filter[:max]]},
+                        :value => '' + filter[:min].to_s + ',' + filter[:max].to_s %>
+                    &nbsp;<%= filter[:max] %>
+                </li>
               <% else %>
               <% labels.each do |nm,val| %>
                 <% label = "#{filter[:name]}_#{nm}".gsub(/\s+/,'_') %>
