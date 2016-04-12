@@ -9,3 +9,9 @@ en:
   order_scope_descend_by_updated_at: Newest
   filters: Filters
   options: Options
+  price_between: Price between
+  colour: Colour
+  size: Size
+  brand: Brand
+  property: Property
+  all_taxons: All Taxons

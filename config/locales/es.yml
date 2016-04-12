@@ -9,3 +9,9 @@ es:
   order_scope_descend_by_updated_at: Novedad
   filters: Filtros
   options: Opciones
+  price_between: Precio entre
+  colour: Color
+  size: Talla
+  brand: Marca
+  property: Propiedad
+  all_taxons: Todos las categorias

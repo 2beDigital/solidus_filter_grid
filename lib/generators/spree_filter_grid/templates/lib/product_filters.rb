@@ -15,10 +15,10 @@ module Spree
 
         sizes = Spree::OptionValue.where(:option_type_id => Spree::OptionType.find_by_name!("tshirt-size")).order("position").map(&:presentation).compact.uniq
         { 
-          :name   => "Size",
-          :scope  => :size_any,
-          :conds  => nil,
-          :labels => sizes.map { |k| [k, k] }
+          name: :size,
+          scope: :size_any,
+          conds: nil,
+          labels: sizes.map { |k| [k, k] }
         }
 
       end
@@ -36,10 +36,10 @@ module Spree
 
         colors = Spree::OptionValue.where(:option_type_id => Spree::OptionType.find_by_name!("tshirt-color")).order("position").map(&:presentation).compact.uniq
         { 
-          :name   => "Color",
-          :scope  => :color_any,
-          :conds  => nil,
-          :labels => colors.map { |k| [k, k] }
+          name: :colour,
+          scope: :color_any,
+          conds: nil,
+          labels: colors.map { |k| [k, k] }
         }
 
       end
@@ -53,7 +53,7 @@ module Spree
 
       def ProductFilters.price_between
         {
-          name:   'Price Between',
+          name:   :price_between,
           scope:  :price_between_any,
           min: 0,
           max: 100,
@@ -79,7 +79,7 @@ module Spree
         pp = Spree::ProductProperty.arel_table
         conds = Hash[*brands.map { |b| [b, pp[:value].eq(b)] }.flatten]
         {
-          name:   'Brands',
+          name:   :brand,
           scope:  :brand_any,
           conds:  conds,
           labels: (brands.sort).map { |k| [k, k] }
@@ -118,7 +118,7 @@ module Spree
       def ProductFilters.all_taxons
         taxons = Spree::Taxonomy.all.distinct(:name).map { |t| [t.root] + t.root.descendants }.flatten
         {
-          name:   'All taxons',
+          name:   :all_taxons,
           scope:  :taxons_id_equals_any,
           labels: taxons.sort_by(&:name).map { |t| [t.name, t.id] },
           conds:  nil # not needed
@@ -133,7 +133,7 @@ module Spree
       def ProductFilters.with_option
         options = Spree::OptionType.all
         {
-          name:   'Options',
+          name:   :options,
           scope:  :with_option_any,
           conds:  nil,
           labels: options.sort_by(&:name).map { |t| [t.name, t.name] }
@@ -149,7 +149,7 @@ module Spree
       def ProductFilters.with_property
         properties = Spree::ProductProperty.all.distinct
         {
-          name:   'Property',
+          name:   :property,
           scope:  :with_property_any,
           conds:  nil,
           labels: properties.sort_by(&:value).map { |t| [t.value, t.id] }

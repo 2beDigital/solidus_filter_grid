@@ -1,0 +1,17 @@
+it:
+  ## scopes order ##
+  order_scope_word: Order
+  order_scope_relevance: Rilevanza
+  order_scope_descend_by_master_price: Prezzo - decrescente
+  order_scope_ascend_by_master_price: Prezzo - basso al più alto
+  order_scope_ascend_by_name: Nome (A - Z)
+  order_scope_descend_by_name: Nome (Z - A)
+  order_scope_descend_by_updated_at: Nuovi
+  filters: Filtri
+  options: Opzioni
+  price_between: Prezzo tra
+  colour: Colore
+  size: Dimensioni
+  brand: Brand
+  property: Proprietá
+  all_taxons: Tutti Taxons
