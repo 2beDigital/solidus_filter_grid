@@ -21,10 +21,10 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th-extra-large').addClass('active');
 		$('ul.product-list li').each( function() {
-			$(this).css('width','23.0769%');
+			$(this).css('width','25%');
 		});
 		$('ul.product-listing  li').each( function() {
-			$(this).css('width','23.0769%');
+			$(this).css('width','25%');
 		});
 	});
 
@@ -32,11 +32,11 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th-large').addClass('active');
 		$('ul.product-list li').each( function() {
-			$(this).css('width','31.6239%');
+			$(this).css('width','33.33333%');
 		});
 
 		$('ul.product-listing  li').each( function() {
-			$(this).css('width','31.6239%');
+			$(this).css('width','33.33333%');
 		});
 	});
 
@@ -44,10 +44,10 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th').addClass('active');
 		$('ul.product-list  li').each( function() {
-			$(this).css('width','48.7179%');
+			$(this).css('width','50%');
 		});
 		$('ul.product-listing  li').each( function() {
-			$(this).css('width','48.7179%');
+			$(this).css('width','50%');
 		});
 	});
 
