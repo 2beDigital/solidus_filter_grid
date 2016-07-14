@@ -56,7 +56,7 @@ module Spree
           name:   :price_between,
           scope:  :price_between_any,
           min: 0,
-          max: 100,
+          max: 1000,
           step:5,
           conds:  nil,
           labels: 'label'
