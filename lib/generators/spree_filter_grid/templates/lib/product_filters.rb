@@ -119,7 +119,7 @@ module Spree
         taxons = Spree::Taxonomy.all.distinct(:name).map { |t| [t.root] + t.root.descendants }.flatten
         {
           name:   :all_taxons,
-          scope:  :taxons_id_equals_any,
+          scope:  :in_taxons,
           labels: taxons.sort_by(&:name).map { |t| [t.name, t.id] },
           conds:  nil # not needed
         }
