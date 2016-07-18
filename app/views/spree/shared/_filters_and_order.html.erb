@@ -1,4 +1,4 @@
-<% if (current_page?("/products") && !params[:keywords]) || (!@taxon.nil? && current_page?('/t/'+@taxon.permalink)) %>
+<% if (current_page?(products_path) && !params[:keywords]) || (!@taxon.nil? && current_page?('/t/'+@taxon.permalink)) %>
     <div class="sort-filter-order" >
       <div class="pull-right">
         <a href="#" class="cd-filter-trigger" id='trigger-filters' >
@@ -38,8 +38,9 @@
           <li><a class='filter' tabindex="-1" href="<%= redirection_page_order_scope %>?order=descend_by_updated_at"><%= t(:order_scope_descend_by_updated_at)%></a></li>
         </ul>
       </div>
-
-      <%= form_tag '', :method => :get, :id => 'sidebar_products_search', name: 'sidebar_products_search' do %>
+      
+      <% url = ( current_page?(products_path) ? products_path : (@taxon.parent.blank?) ? '/t/' + @taxon.permalink : '/t/' + @taxon.parent.permalink) %>
+      <%= form_tag url, :method => :get, :id => 'sidebar_products_search', name: 'sidebar_products_search' do %>
         <%#= hidden_field_tag 'per_page', params[:per_page] %>
         <% filters.each do |filter| %>
           <% labels = filter[:labels] || filter[:conds].map {|m,c| [m,m]} %>
