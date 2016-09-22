@@ -18,7 +18,7 @@ module SpreeFilterGrid
       end
 
       def add_require
-        inject_into_file 'config/initializers/spree.rb', " require 'product_filters'\n", :before => "Spree.config do |config|\n"
+        inject_into_file 'app/helpers/application_helper.rb', "require 'product_filters'\n", :before => "module ApplicationHelper\n"
       end
     end
   end
