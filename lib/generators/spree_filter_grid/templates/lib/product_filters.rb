@@ -6,7 +6,7 @@ module Spree
       Spree::Product.add_search_scope :size_any do |*opts|
         option_values = []
         opts.each {|x| option_values << Spree::OptionValue.find_by_presentation(x).id }
-        conds = "#{Product.table_name}.id in (select product_id from #{Variant.table_name} v left join spree_option_values_variants ov on ov.variant_id = v.id where ov.option_value_id in (?))", option_values
+        conds = "#{Product.table_name}.id in (select product_id from #{Variant.table_name} v left join spree_option_values_variants ov on ov.variant_id = v.id and v.deleted_at is null where ov.option_value_id in (?))", option_values
         Spree::Product.where(conds)
       end
 
@@ -27,7 +27,7 @@ module Spree
       Spree::Product.add_search_scope :color_any do |*opts|
         option_values = []
         opts.each {|x| option_values << Spree::OptionValue.find_by_presentation(x).id }
-        conds = "#{Product.table_name}.id in (select product_id from #{Variant.table_name} v left join spree_option_values_variants ov on ov.variant_id = v.id where ov.option_value_id in (?))", option_values
+        conds = "#{Product.table_name}.id in (select product_id from #{Variant.table_name} v left join spree_option_values_variants ov on ov.variant_id = v.id and v.deleted_at is null where ov.option_value_id in (?))", option_values
         Spree::Product.where(conds)
       end
 
