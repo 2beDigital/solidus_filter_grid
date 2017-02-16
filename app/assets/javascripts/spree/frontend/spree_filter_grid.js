@@ -11,7 +11,7 @@ $('document').ready( function () {
 	// Added to activate mobile or desktop icon
 	var windowWidth = $(window).width();
 	if (windowWidth > 767){
-		$('.i-th').addClass('active');
+		$('.i-th-large').addClass('active');
 	} else {
 		$('.i-th-vertical').addClass('active');
 	}
