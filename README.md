@@ -1,20 +1,20 @@
-# SpreeFilterGrid
+# SolidusFilterGrid
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'spree_filter_grid', :git => 'https://github.com/NoelDiazMesa/spree_filter_grid', :branch => 'master'
+gem 'solidus_filter_grid', :git => 'https://github.com/2bedigital/solidus_filter_grid', :branch => 'master'
 ```
 
 And then execute:
 
-    $ bundle exec rails g spree_filter_grid:install
+    $ bundle exec rails g solidus_filter_grid:install
 
 Or install it yourself as:
 
-    $ gem install spree_filter_grid
+    $ gem install solidus_filter_grid
 
 
 ## Development
@@ -25,7 +25,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/spree_filter_grid.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/solidus_filter_grid.
 
 
 ## License

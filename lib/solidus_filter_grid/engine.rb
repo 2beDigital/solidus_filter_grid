@@ -1,8 +1,8 @@
-module SpreeFilterGrid
+module SolidusFilterGrid
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_filter_grid'
+    engine_name 'solidus_filter_grid'
 
     # use rspec for tests
     config.generators do |g|
