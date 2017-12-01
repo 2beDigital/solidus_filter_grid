@@ -44,10 +44,10 @@ $('document').ready( function () {
 		removeActive();
 		$('.i-th').addClass('active');
 		$('ul.product-list  li').each( function() {
-			$(this).css('width','50%');
+			$(this).css('width','49%');
 		});
 		$('ul.product-listing  li').each( function() {
-			$(this).css('width','50%');
+			$(this).css('width','49%');
 		});
 	});
 
