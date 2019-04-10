@@ -48,7 +48,6 @@
           <div class="cd-filter-block">
             <h4> <%= t(filter[:name]) %>  </h4>
             <ul class="cd-filter-content cd-filters list">
-              <% byebug %>
               <% if filter[:name] == :price_between %>
                 <li>
                     <%= filter[:min] %>€&nbsp;
